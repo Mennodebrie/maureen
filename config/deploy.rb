@@ -1,3 +1,4 @@
+load 'deploy/assets'
 require "capistrano-rbenv"
 require "bundler/capistrano"
 
