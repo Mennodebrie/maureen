@@ -51,5 +51,9 @@ namespace :deploy do
       exit
     end
   end
+
+    task :assets do
+    run "cd #{current_path} && bundle exec rake assets:precompile RAILS_ENV=#{rails_env}"
+  end
   before "deploy", "deploy:check_revision"
 end
