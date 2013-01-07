@@ -1,6 +1,7 @@
-load 'deploy/assets'
 require "capistrano-rbenv"
 require "bundler/capistrano"
+
+
 
 server "141.0.169.247", :web, :app, :db, primary: true
 
@@ -18,6 +19,16 @@ default_run_options[:pty] = true
 ssh_options[:forward_agent] = true
 
 after "deploy", "deploy:cleanup" # keep only the last 5 releases
+
+before "deploy:symlink", "assets:precompile"
+ 
+namespace :assets do
+  desc "Compile assets"
+  task :precompile, :roles => :app do
+    run "cd #{release_path} && rake RAILS_ENV=#{rails_env} assets:precompile"
+  end
+end
+
 
 namespace :deploy do
   %w[start stop restart].each do |command|
