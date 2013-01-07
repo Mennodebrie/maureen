@@ -7,6 +7,7 @@ server "141.0.169.247", :web, :app, :db, primary: true
 
 set :application, "maureen"
 set :user, "deployer"
+set :rails_env, "production"
 set :deploy_to, "/home/#{user}/apps/#{application}"
 set :deploy_via, :remote_cache
 set :use_sudo, false
