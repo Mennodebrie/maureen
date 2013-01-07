@@ -21,8 +21,8 @@ group :assets do
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   gem 'less-rails'
-  # gem 'therubyracer', :platforms => :ruby
-  # gem 'execjs'
+  gem "therubyracer", "0.10.2"
+  gem "execjs", "1.4.0"
 
   gem 'uglifier', '>= 1.0.3'
 end
