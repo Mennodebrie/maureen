@@ -1,5 +1,5 @@
 require "capistrano-rbenv"
-require "bundler/capistrano"
+#require "bundler/capistrano"
 
 
 
@@ -28,12 +28,6 @@ namespace :deploy do
     desc "#{command} unicorn server"
     task command, roles: :app, except: {no_release: true} do
       run "/etc/init.d/unicorn_#{application} #{command}"
-    end
-  end
-
-  namespace :assets do
-    task :precompile, :roles => :web, :except => { :no_release => true } do
-      run "cd #{current_path} && #{rake} RAILS_ENV=#{rails_env} RAILS_GROUPS=assets assets:precompile --trace"
     end
   end
 
