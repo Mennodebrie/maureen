@@ -41,6 +41,11 @@ namespace :deploy do
   task :symlink_config, roles: :app do
     run "ln -nfs #{shared_path}/config/database.yml #{release_path}/config/database.yml"
   end
+
+  task :assets do
+    run "cd #{current_path} && bundle exec rake assets:precompile RAILS_ENV=#{rails_env}"
+  end
+
   after "deploy:finalize_update", "deploy:symlink_config"
 
   desc "Make sure local git is in sync with remote."
@@ -50,10 +55,6 @@ namespace :deploy do
       puts "Run `git push` to sync changes."
       exit
     end
-  end
-
-    task :assets do
-    run "cd #{current_path} && bundle exec rake assets:precompile RAILS_ENV=#{rails_env}"
-  end
+  end  
   before "deploy", "deploy:check_revision"
 end
