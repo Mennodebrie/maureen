@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<%= render '/refinery/html_tag' %>
+  <% site_bar = render('/refinery/site_bar', :head => true) -%>
+  <%= render '/refinery/head' %>
+  <body>
+    <%= site_bar -%>
+    <%= render '/refinery/ie6check' if request.env['HTTP_USER_AGENT'] =~ /MSIE/ -%>
+    <div id="page_container">
+      <header id="header">
+        <%= render '/refinery/header' -%>
+      </header>
+
+      <header class="jumbotron masthead">
+        <div class="container">
+          <h3>'You don't have to brush your teeth - just the ones you want to keep.' </h3>
+        </div>
+      </header>
+      
+      <div class='container'>
+        <section id="page">
+          <%= yield %>
+        </section>
+        <footer>
+          <%= render '/refinery/footer' -%>
+        </footer>
+      <div>  
+    </div>
+    <%= render '/refinery/javascripts' %>
+  </body>
+</html>
