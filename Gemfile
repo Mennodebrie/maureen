@@ -8,7 +8,7 @@ gem 'rake', '10.0.3'
 gem 'pg'
 
 group :development, :test do
-  gem 'sqlite3'
+  # gem 'sqlite3'
 end
 
 gem 'json'
