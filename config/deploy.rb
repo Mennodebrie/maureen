@@ -1,5 +1,5 @@
 require "capistrano-rbenv"
-#require "bundler/capistrano"
+require "bundler/capistrano"
 
 
 
