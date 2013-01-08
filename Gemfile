@@ -20,11 +20,9 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-   # gem "execjs", "1.4.0"
-   
   gem 'less-rails'
-  # gem "therubyracer", "0.10.2"
-
+  gem "therubyracer", "0.10.2"
+  # gem "execjs", "1.4.0"
 
   gem 'uglifier', '>= 1.0.3'
 end
