@@ -3,7 +3,7 @@ require "bundler/capistrano"
 
 
 
-server "141.0.169.247", :web, :app, :db, primary: true
+server "185.14.184.174", :web, :app, :db, primary: true
 
 set :application, "maureen"
 set :user, "deployer"
