@@ -159,7 +159,7 @@ GEM
       will_paginate (~> 3.0.2)
     refinerycms-dashboard (2.0.9)
       refinerycms-core (= 2.0.9)
-    refinerycms-i18n (2.0.2)
+    refinerycms-i18n (2.0.0)
       refinerycms-core (~> 2.0.0)
       routing-filter (>= 0.2.3)
     refinerycms-images (2.0.9)
@@ -230,8 +230,8 @@ DEPENDENCIES
   pg
   rails (= 3.2.9)
   rake (~> 0.9.2)
-  refinerycms (~> 2.0.9)
-  refinerycms-i18n (~> 2.0.0)
+  refinerycms (= 2.0.9)
+  refinerycms-i18n (= 2.0.0)
   sass-rails (~> 3.2.3)
   sqlite3
   therubyracer
