@@ -4,8 +4,6 @@ require "bundler/capistrano"
 # server "185.14.184.174", :web, :app, :db, primary: true
 server "37.139.6.7", :web, :app, :db, primary: true
 
-# set :rbenv_prefix, "RBENV_ROOT=#{fetch(:rbenv_path)} RBENV_VERSION=#{fetch(:rbenv_ruby)} #{fetch(:rbenv_path)}/bin/rbenv exec"
-
 set :application, "maureen"
 set :user, "deployer"
 set :rails_env, "production"
