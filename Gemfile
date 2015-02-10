@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 # ruby "2.1.3"
 
-gem 'rails', '3.2.9'
+gem 'rails', '3.2.20'
 gem 'rake', '~> 0.9.2'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -29,7 +29,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails', '~> 2.0.0'
+gem 'jquery-rails', '~> 2.3.0'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -49,12 +49,13 @@ gem "capistrano", "~> 2.15.0"
 # gem 'ruby-debug'
 
 # Refinery CMS
-gem 'refinerycms', '~> 2.0.9'
+gem 'babosa'
+gem 'refinerycms', '~> 2.1.5'
 
 gem 'twitter-bootstrap-rails'
 
 # Specify additional Refinery CMS Extensions here (all optional):
-gem 'refinerycms-i18n', '~> 2.0.0'
+gem 'refinerycms-i18n', '~> 2.1.0'
 #  gem 'refinerycms-blog', '~> 2.0.0'
 #  gem 'refinerycms-inquiries', '~> 2.0.0'
 #  gem 'refinerycms-search', '~> 2.0.0'
