@@ -7,9 +7,10 @@ gem 'rake', '~> 0.9.2'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg'
+gem 'sqlite3'
 
 group :development, :test do
-  gem 'sqlite3'
+
   gem 'net-ssh'
 end
 
