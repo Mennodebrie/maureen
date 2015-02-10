@@ -9,7 +9,7 @@ gem 'pg'
 
 group :development, :test do
   gem 'sqlite3'
-  # gem 'net-ssh', '~> 2.9.2'
+  gem 'net-ssh', '~> 2.6.5'
 end
 
 gem 'json'
