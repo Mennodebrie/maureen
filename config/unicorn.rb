@@ -1,4 +1,4 @@
-root = "/home/deployer/all_apps/maureen/current"
+root = "/home/deployer/apps/maureen/current"
 working_directory root
 pid "#{root}/tmp/pids/unicorn.pid"
 stderr_path "#{root}/log/unicorn.log"
