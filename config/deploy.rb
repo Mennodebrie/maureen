@@ -1,4 +1,4 @@
-require "capistrano-rbenv"
+require "capistrano-rvm"
 require "bundler/capistrano"
 
 

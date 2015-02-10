@@ -9,7 +9,7 @@ gem 'pg'
 
 group :development, :test do
   gem 'sqlite3'
-  gem 'net-ssh', '~> 2.8.1', :git => "https://github.com/net-ssh/net-ssh"
+  # gem 'net-ssh', '~> 2.8.1', :git => "https://github.com/net-ssh/net-ssh"
 end
 
 gem 'json'
@@ -22,7 +22,7 @@ group :assets do
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   gem 'less-rails'
-  gem "therubyracer", "0.10.2"
+  gem "therubyracer" #, "0.10.2"
   # gem "execjs", "1.4.0"
 
   gem 'uglifier', '>= 1.0.3'
@@ -40,7 +40,8 @@ gem 'jquery-rails', '~> 2.0.0'
 gem 'unicorn'
 
 # Deploy with Capistrano
-gem 'capistrano-rbenv'
+# gem 'capistrano-rbenv'
+gem 'capistrano-rvm'
 gem 'capistrano', '~> 2.15'
 
 # To use debugger
