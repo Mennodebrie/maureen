@@ -1,4 +1,5 @@
 require 'capistrano-rbenv'
+set :rbenv_ruby_version, "2.1.3"
 require "bundler/capistrano"
 
 set :default_environment, {'PATH' => "$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH"}
