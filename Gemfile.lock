@@ -94,7 +94,7 @@ GEM
       net-ssh (>= 2.6.5)
     net-sftp (2.1.2)
       net-ssh (>= 2.6.5)
-    net-ssh (2.6.8)
+    net-ssh (2.9.2)
     net-ssh-gateway (1.2.0)
       net-ssh (>= 2.6.5)
     orm_adapter (0.0.7)
@@ -217,13 +217,13 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  capistrano (~> 2.15)
+  capistrano (~> 2.15.0)
   capistrano-rvm
   coffee-rails (~> 3.2.1)
   jquery-rails (~> 2.0.0)
   json
   less-rails
-  net-ssh (~> 2.6.5)
+  net-ssh
   pg
   rails (= 3.2.9)
   rake (~> 0.9.2)

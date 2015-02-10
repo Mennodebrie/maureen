@@ -9,7 +9,7 @@ gem 'pg'
 
 group :development, :test do
   gem 'sqlite3'
-  gem 'net-ssh', '~> 2.6.5'
+  gem 'net-ssh'
 end
 
 gem 'json'
@@ -42,7 +42,7 @@ gem 'unicorn'
 # Deploy with Capistrano
 # gem 'capistrano-rbenv'
 gem 'capistrano-rvm'
-gem 'capistrano', '~> 2.15'
+gem "capistrano", "~> 2.15.0"
 
 # To use debugger
 # gem 'ruby-debug'
