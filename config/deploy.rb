@@ -6,7 +6,9 @@ require "bundler/capistrano"
 # server "185.14.184.174", :web, :app, :db, primary: true
 server "37.139.6.7", :web, :app, :db, primary: true
 
+set :rbenv_type, :user
 set :rbenv_ruby, '2.1.3'
+
 set :application, "maureen"
 set :user, "deployer"
 set :rails_env, "production"
