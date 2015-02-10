@@ -220,7 +220,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  babosa
   capistrano (~> 2.15.0)
   capistrano-rbenv
   coffee-rails (~> 3.2.1)

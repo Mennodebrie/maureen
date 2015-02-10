@@ -49,7 +49,6 @@ gem "capistrano", "~> 2.15.0"
 # gem 'ruby-debug'
 
 # Refinery CMS
-gem 'babosa'
 gem 'refinerycms', '~> 2.0.9'
 
 gem 'twitter-bootstrap-rails'
