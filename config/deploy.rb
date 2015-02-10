@@ -1,4 +1,4 @@
-require "rvm/capistrano"
+require "capistrano/rvm"
 require "bundler/capistrano"
 
 
