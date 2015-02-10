@@ -1,7 +1,7 @@
 require 'capistrano-rbenv'
 require "bundler/capistrano"
 
-set :default_environment, {'PATH' => "$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH"
+set :default_environment, {'PATH' => "$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH"}
 
 # server "185.14.184.174", :web, :app, :db, primary: true
 server "37.139.6.7", :web, :app, :db, primary: true
