@@ -1,5 +1,5 @@
-set :rbenv_type, :user
-set :rbenv_ruby, '2.1.3'
+set :rbenv_custom_path, '/home/deployer/.rbenv/'
+
 load 'deploy'
 
 # Uncomment if you are using Rails' asset pipeline
